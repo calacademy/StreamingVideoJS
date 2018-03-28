@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.calacademy.sharkslive" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Stingrays Live</name>
+    <description>
+        Switch between two high-definition webcams and spot every detail on 10+ species of fish. Streaming in real-time, 24/7.
+    </description>
+    <author email="webcams@calacademy.org" href="https://www.calacademy.org">
+        California Academy of Sciences
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <splash src="splash.png" />
+    <icon src="icon.png" />
+    <preference name="orientation" value="landscape" />
+</widget>

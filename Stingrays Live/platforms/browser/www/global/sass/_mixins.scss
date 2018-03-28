@@ -1,0 +1,82 @@
+@mixin calacademy-font-face($weight, $string) {
+	@font-face {
+		font-family: 'Whitney';
+	    font-weight: $weight;
+	    font-style: normal;
+		src: url('../fonts/Whitney-' + $string + '.otf');
+	}
+	@font-face {
+		font-family: 'Whitney';
+	    font-weight: $weight;
+	    font-style: italic;
+		src: url('../fonts/Whitney-' + $string + 'Italic.otf');
+	}
+}
+
+@mixin calacademy-transform-origin($x, $y, $z:null) {
+	$myVal: $x $y $z;
+
+	@if $z == null {
+		$myVal: $x $y;
+	}
+
+	// vendor prefixed
+	@each $prefix in browser-prefixes($supported-browsers) {
+		#{$prefix + '-transform-origin'}: $myVal;
+	}
+
+	// no vendor prefix
+	transform-origin: $myVal;
+
+	.lt-ie9 & {
+		-ms-transform-origin: $x $y;
+		transform-origin: $x $y;
+	}
+}
+
+@mixin calc($prop, $val, $valFallback) {
+	// fallback
+	#{$prop}: $valFallback;
+
+	// vendor prefixed
+	@each $prefix in browser-prefixes($supported-browsers) {
+		#{$prop}: $prefix + '-' + calc(#{$val});
+	}
+
+	// no vendor prefix
+	#{$prop}: calc(#{$val});
+}
+
+@mixin hand-cursor {
+	cursor: hand;
+	cursor: pointer;
+}
+
+@mixin no-focus-border {
+	outline: none;
+
+	&::-moz-focus-inner {
+		border: 0;
+	}
+
+	&:-moz-focusring {
+    	color: transparent;
+    	text-shadow: 0 0 0 #000;
+	}
+}
+
+@mixin select-appearance {
+	@include appearance(none);
+	background-color: transparent;
+	border: 0;
+	@include border-radius(0);
+
+	// browser hacks
+	&::-ms-expand {
+    	display: none;
+	}
+
+	@include no-focus-border;
+	text-indent: 0.01px;
+	text-overflow: '';
+}

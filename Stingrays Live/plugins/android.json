@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "org.calacademy.sharkslive"
+        },
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "org.calacademy.sharkslive"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "org.calacademy.sharkslive"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.calacademy.sharkslive"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "org.calacademy.sharkslive"
+        }
+    },
+    "dependent_plugins": {}
+}

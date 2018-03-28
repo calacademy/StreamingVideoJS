@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.calacademy.sharkslive" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Stingrays Live</name>
+    <description>
+        Switch between two high-definition webcams and spot every detail on 10+ species of fish. Streaming in real-time, 24/7.
+    </description>
+    <author email="webcams@calacademy.org" href="https://www.calacademy.org">
+        California Academy of Sciences
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="orientation" value="landscape" />
+    <splash src="splash.png" />
+    <icon src="icon.png" />
+    <platform name="android">
+        <icon height="48" qualifier="mdpi" src="icons/mdpi.png" width="48" />
+        <icon height="72" qualifier="hdpi" src="icons/hdpi.png" width="72" />
+        <icon height="96" qualifier="xhdpi" src="icons/xhdpi.png" width="96" />
+        <icon height="144" qualifier="xxhdpi" src="icons/xxhdpi.png" width="144" />
+        <icon height="192" qualifier="xxxhdpi" src="icons/xxxhdpi.png" width="192" />
+    </platform>
+    <engine name="android" spec="^6.2.3" />
+    <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^2.0.1" />
+    <plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
+</widget>

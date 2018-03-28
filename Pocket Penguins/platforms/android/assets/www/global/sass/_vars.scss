@@ -1,0 +1,21 @@
+$breakSmartphone: 320px;
+$breakTablet: 768px;
+$breakDesktop: 1000px;
+$padding: 20px;
+$easing: cubic-bezier(.215, .61, .355, 1);
+$easeOut: cubic-bezier(0, 0, 0.58, 1);
+
+// font weights
+$light: 300;
+$book: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$fontSize: 16px;
+$fontSizeSmall: 14px;
+
+// color
+$blue: #2497cf;
+$blueLight: #0095d3;
+$screenBlack: rgba(#000000, .5);

@@ -1,0 +1,970 @@
+/* line 5, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/Cellar/ruby/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in-70 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes fade-in-70 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes fade-in-70 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes from-bottom {
+  0% {
+    -moz-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes from-bottom {
+  0% {
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes from-bottom {
+  0% {
+    -moz-transform: translate3d(0, 30px, 0);
+    -ms-transform: translate3d(0, 30px, 0);
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes from-bottom-fade-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes from-bottom-fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes from-bottom-fade-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 80px, 0);
+    -ms-transform: translate3d(0, 80px, 0);
+    -webkit-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Whitney-Light.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/Whitney-LightItalic.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Whitney-Book.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/Whitney-BookItalic.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Whitney-Medium.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 500;
+  font-style: italic;
+  src: url("../fonts/Whitney-MediumItalic.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Whitney-Semibold.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 600;
+  font-style: italic;
+  src: url("../fonts/Whitney-SemiboldItalic.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Whitney-Bold.otf");
+}
+@font-face {
+  font-family: 'Whitney';
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/Whitney-BoldItalic.otf");
+}
+/* line 16, ../sass/index.scss */
+html, body, #vid-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/index.scss */
+* {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+}
+
+/* line 34, ../sass/index.scss */
+body {
+  font-family: 'Whitney', 'Helvetica Neue', 'Helvetica', sans-serif;
+  background-color: #000000;
+  background-position: center center;
+  background-image: url("../../images/splash.png");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 35, ../sass/index.scss */
+body strong, body b {
+  font-weight: 600;
+}
+/* line 38, ../sass/index.scss */
+body em, body i {
+  font-style: italic;
+}
+/* line 42, ../sass/index.scss */
+.alerting body {
+  pointer-events: none;
+}
+/* line 52, ../sass/index.scss */
+body .label,
+body .text,
+body .body,
+body .button,
+body h2 {
+  -webkit-font-smoothing: antialiased;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 1, ../sass/_alert.scss */
+body .streaming-video .alert {
+  -moz-animation: fade-in 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation: fade-in 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: fade-in 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  pointer-events: all;
+  text-align: center;
+  color: #000000;
+  line-height: 1.4em;
+}
+/* line 11, ../sass/_alert.scss */
+body .streaming-video .alert, body .streaming-video .alert .bg {
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 19, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container {
+  z-index: 2;
+  position: absolute;
+  width: 325px;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  -moz-transform: translate3d(0, -51%, 0);
+  -ms-transform: translate3d(0, -51%, 0);
+  -webkit-transform: translate3d(0, -51%, 0);
+  transform: translate3d(0, -51%, 0);
+}
+/* line 30, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-animation: from-bottom 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -webkit-animation: from-bottom 0.3s cubic-bezier(0, 0, 0.58, 1);
+  animation: from-bottom 0.3s cubic-bezier(0, 0, 0.58, 1);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+/* line 38, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content h2, body .streaming-video .alert .alert-container .alert-content .body, body .streaming-video .alert .alert-container .alert-content .button {
+  padding: 25px;
+}
+/* line 42, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content h2, body .streaming-video .alert .alert-container .alert-content .button {
+  font-size: 18px;
+}
+/* line 46, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content h2 {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+/* line 51, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content .body {
+  padding-top: 0;
+  font-size: 17px;
+}
+/* line 56, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content .button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: hand;
+  cursor: pointer;
+  float: left;
+  color: #2497cf;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+/* line 68, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content .button:last-child {
+  border-right: none;
+}
+/* line 72, ../sass/_alert.scss */
+body .streaming-video .alert .alert-container .alert-content .button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 79, ../sass/_alert.scss */
+body .streaming-video .alert .bg {
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 88, ../sass/_alert.scss */
+body .streaming-video .alert.num-btns-1 .button {
+  width: 100%;
+}
+/* line 88, ../sass/_alert.scss */
+body .streaming-video .alert.num-btns-2 .button {
+  width: 50%;
+}
+/* line 88, ../sass/_alert.scss */
+body .streaming-video .alert.num-btns-3 .button {
+  width: 33.33333%;
+}
+/* line 88, ../sass/_alert.scss */
+body .streaming-video .alert.num-btns-4 .button {
+  width: 25%;
+}
+/* line 88, ../sass/_alert.scss */
+body .streaming-video .alert.num-btns-5 .button {
+  width: 20%;
+}
+/* line 88, ../sass/_alert.scss */
+body .streaming-video .alert.num-btns-6 .button {
+  width: 16.66667%;
+}
+/* line 64, ../sass/index.scss */
+body .streaming-video .alert {
+  z-index: 999999;
+}
+/* line 68, ../sass/index.scss */
+body .streaming-video #buffering-ui {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  margin-left: -40px;
+  margin-top: -45px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  display: none;
+}
+/* line 85, ../sass/index.scss */
+body .streaming-video #buffering-ui .text {
+  display: none;
+}
+/* line 89, ../sass/index.scss */
+body .streaming-video #buffering-ui .svg-container {
+  -moz-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+/* line 92, ../sass/index.scss */
+body .streaming-video #buffering-ui .svg-container svg {
+  margin-left: 1px;
+  -moz-animation: rotate 1.3s infinite linear;
+  -webkit-animation: rotate 1.3s infinite linear;
+  animation: rotate 1.3s infinite linear;
+}
+/* line 100, ../sass/index.scss */
+.buffering body .streaming-video #buffering-ui {
+  display: block;
+}
+/* line 103, ../sass/index.scss */
+.alerting body .streaming-video #buffering-ui, .menu-open body .streaming-video #buffering-ui {
+  display: none;
+}
+/* line 109, ../sass/index.scss */
+body .streaming-video #logo,
+body .streaming-video #donate-button {
+  display: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 114, ../sass/index.scss */
+.first-play body .streaming-video #logo, .first-play
+body .streaming-video #donate-button {
+  display: block;
+}
+/* line 121, ../sass/index.scss */
+body .streaming-video #logo .graphic,
+body .streaming-video #donate-button .graphic {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 126, ../sass/index.scss */
+body .streaming-video #logo.highlight .graphic,
+body .streaming-video #donate-button.highlight .graphic {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 132, ../sass/index.scss */
+body .streaming-video #logo {
+  -moz-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s forwards;
+  -webkit-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s forwards;
+  animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s forwards;
+  cursor: hand;
+  cursor: pointer;
+  z-index: 5;
+}
+/* line 137, ../sass/index.scss */
+body .streaming-video #logo,
+body .streaming-video #logo .graphic,
+body .streaming-video #logo .shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 145, ../sass/index.scss */
+body .streaming-video #logo .graphic {
+  width: 87px;
+  height: 135px;
+  z-index: 2;
+  top: 8px;
+  right: 8px;
+}
+/* line 153, ../sass/index.scss */
+body .streaming-video #logo .shadow {
+  width: 300px;
+  height: 300px;
+  -moz-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, -moz-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+  -o-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, -o-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition-delay: 0.6s, 0.6s;
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+  pointer-events: none;
+}
+/* line 170, ../sass/index.scss */
+body .streaming-video #donate-button {
+  -moz-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+  -webkit-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+  animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+  z-index: 4;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+}
+/* line 173, ../sass/index.scss */
+body .streaming-video #donate-button,
+body .streaming-video #donate-button .anim,
+body .streaming-video #donate-button .label,
+body .streaming-video #donate-button .shadow {
+  position: absolute;
+}
+/* line 185, ../sass/index.scss */
+body .streaming-video #donate-button, body .streaming-video #donate-button .shadow {
+  width: 550px;
+  height: 175px;
+}
+/* line 191, ../sass/index.scss */
+body .streaming-video #donate-button .anim,
+body .streaming-video #donate-button .label {
+  cursor: hand;
+  cursor: pointer;
+}
+/* line 196, ../sass/index.scss */
+body .streaming-video #donate-button .anim {
+  z-index: 3;
+}
+/* line 200, ../sass/index.scss */
+body .streaming-video #donate-button .label {
+  padding-top: 30px;
+  bottom: 10px;
+  z-index: 2;
+}
+/* line 206, ../sass/index.scss */
+body .streaming-video #donate-button .shadow {
+  background-image: url(../images/shadow-donate.png);
+  -moz-background-size: 550px 175px;
+  -o-background-size: 550px 175px;
+  -webkit-background-size: 550px 175px;
+  background-size: 550px 175px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+/* line 217, ../sass/index.scss */
+.sharks body .streaming-video #donate-button .anim {
+  width: 125px;
+  height: 100px;
+  -moz-background-size: 125px 100px;
+  -o-background-size: 125px 100px;
+  -webkit-background-size: 125px 100px;
+  background-size: 125px 100px;
+  background-image: url(../../images/silhouette.png);
+  top: 70px;
+  left: 10px;
+}
+/* line 227, ../sass/index.scss */
+.sharks body .streaming-video #donate-button .label {
+  left: 76px;
+}
+/* line 1, ../sass/_menu.scss */
+body .streaming-video #menu-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* line 4, ../sass/_menu.scss */
+body .streaming-video #menu-container.active {
+  display: block;
+}
+/* line 8, ../sass/_menu.scss */
+.alerting body .streaming-video #menu-container {
+  display: none;
+}
+/* line 19, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-animation: fade-in 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  -webkit-animation: fade-in 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: fade-in 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../sass/_menu.scss */
+.menu-open body .streaming-video #menu-container #menu-ui {
+  display: block;
+}
+/* line 32, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui #menu-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+/* line 39, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  top: 48%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none;
+}
+/* line 47, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: translate3d(0, 60px, 0);
+  -ms-transform: translate3d(0, 60px, 0);
+  -webkit-transform: translate3d(0, 60px, 0);
+  transform: translate3d(0, 60px, 0);
+  -moz-animation: from-bottom-fade-in 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  -webkit-animation: from-bottom-fade-in 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: from-bottom-fade-in 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  pointer-events: all;
+  float: left;
+  position: relative;
+  line-height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: hand;
+  cursor: pointer;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.3%;
+  max-width: 225px;
+  border: 8px solid #fff;
+  margin-right: 16px;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-0 {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-1 {
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-2 {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-3 {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-4 {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-5 {
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-6 {
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-7 {
+  -moz-animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-8 {
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-9 {
+  -moz-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-10 {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-11 {
+  -moz-animation-delay: 1.1s;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-12 {
+  -moz-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-13 {
+  -moz-animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-14 {
+  -moz-animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-15 {
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-16 {
+  -moz-animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-17 {
+  -moz-animation-delay: 1.7s;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-18 {
+  -moz-animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-19 {
+  -moz-animation-delay: 1.9s;
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+}
+/* line 53, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.stream-index-20 {
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 74, ../sass/_menu.scss */
+.small-menu body .streaming-video #menu-container #menu-ui ul li {
+  border: 6px solid #fff;
+  margin-right: 12px;
+}
+/* line 80, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li:last-child {
+  margin-right: 0;
+}
+/* line 84, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li .label {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  z-index: 2;
+}
+/* line 96, ../sass/_menu.scss */
+.small-menu body .streaming-video #menu-container #menu-ui ul li .label {
+  font-size: 14px;
+  bottom: 14px;
+}
+/* line 102, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li:before,
+body .streaming-video #menu-container #menu-ui ul li .img-container:before,
+body .streaming-video #menu-container #menu-ui ul li .img-container:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 115, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li .img-container {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 119, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li .img-container img {
+  width: 100%;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: -o-transform 0.5s cubic-bezier(0, 0, 0.58, 1);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 0.5s cubic-bezier(0, 0, 0.58, 1);
+}
+/* line 125, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li .img-container:before {
+  display: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-animation: fade-in-70 0.3s cubic-bezier(0, 0, 0.58, 1) forwards;
+  -webkit-animation: fade-in-70 0.3s cubic-bezier(0, 0, 0.58, 1) forwards;
+  animation: fade-in-70 0.3s cubic-bezier(0, 0, 0.58, 1) forwards;
+  background-image: url("../../global/images/arrow.png");
+  -moz-background-size: 47px 50px;
+  -o-background-size: 47px 50px;
+  -webkit-background-size: 47px 50px;
+  background-size: 47px 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 2;
+}
+/* line 130, ../sass/_menu.scss */
+.highlight body .streaming-video #menu-container #menu-ui ul li .img-container:before {
+  display: block;
+}
+/* line 142, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li .img-container:after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7));
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+/* line 148, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.highlight {
+  border-color: #2497cf;
+}
+/* line 153, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.highlight .img-container:before {
+  display: block;
+}
+/* line 158, ../sass/_menu.scss */
+body .streaming-video #menu-container #menu-ui ul li.highlight .img-container img {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 235, ../sass/index.scss */
+body .streaming-video #menu-container {
+  z-index: 3;
+}
+/* line 238, ../sass/index.scss */
+.menu-open body .streaming-video #menu-container {
+  z-index: 999;
+}
+/* line 243, ../sass/index.scss */
+body .streaming-video #vid-container {
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 254, ../sass/index.scss */
+body .streaming-video #vid-container .player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+/* line 262, ../sass/index.scss */
+body .streaming-video #vid-container .player.playing {
+  -moz-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: fade-in 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 2;
+  background-color: #000000;
+}
+/* line 267, ../sass/index.scss */
+body .streaming-video #vid-container .player.first-play {
+  display: block;
+}

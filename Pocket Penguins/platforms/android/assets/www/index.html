@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="buffering">
+    <head>
+        <title>Pocket Penguins</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="global/stylesheets/index.css" />
+
+        <script type="text/javascript" src="global/js/modernizr.js"></script>
+        <script type="text/javascript" src="global/js/hls.min.js"></script>
+        <script type="text/javascript" src="global/js/Class.js"></script>
+        <script type="text/javascript" src="global/js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="global/js/statics.js"></script>
+        <script type="text/javascript" src="global/js/Tracking.js"></script>
+        <script type="text/javascript" src="global/js/Alert.js"></script>
+        <script type="text/javascript" src="global/js/Menu.js"></script>
+        <script type="text/javascript" src="global/js/DonateButton.js"></script>
+        <script type="text/javascript" src="global/js/StreamingVideoModel.js"></script>
+        <script type="text/javascript" src="global/js/StreamingVideoVideo.js"></script>
+        <script type="text/javascript" src="global/js/StreamingVideo.js"></script>
+        <script type="text/javascript" src="global/js/index.js"></script>
+    </head>
+    <body>
+        <div class="streaming-video">
+            <div id="buffering-ui">
+                <div class="svg-container">
+                    <svg width="45" height="45">
+                        <defs>
+                            <clipPath id="clip">
+                                <path d="M22.5,13.25c5.101,0,9.25,4.15,9.25,9.25c0,5.101-4.149,9.25-9.25,9.25c-5.1,0-9.25-4.149-9.25-9.25
+        C13.25,17.4,17.4,13.25,22.5,13.25 M22.5,4C12.283,4,4,12.283,4,22.5C4,32.718,12.283,41,22.5,41C32.718,41,41,32.718,41,22.5
+        C41,12.283,32.718,4,22.5,4L22.5,4z" />
+                            </clipPath>
+                        </defs>
+
+                        <image xlink:href="global/images/buffering-gradient.png" width="45" height="45" clip-path="url(#clip)" />
+                    </svg>
+                </div>
+            
+                <div class="text">Buffering&#133;</div>
+            </div>
+            <div id="logo"><img src="global/images/logo.png" class="graphic" /><img src="global/images/shadow-logo.png" class="shadow" /></div>
+            <div id="donate-button"></div>
+            <div id="menu-container"></div>
+            <div id="vid-container"></div>
+        </div>
+
+        <script type="text/javascript">
+            window.slug = 'penguins';
+            window.hls = null;
+
+            $('html').addClass(window.slug);
+            app.initialize();
+        </script>
+    </body>
+</html>

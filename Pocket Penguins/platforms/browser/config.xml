@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="air.pocketpenguins" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Pocket Penguins</name>
+    <description>
+        Warning: Cute alert! An intimate view into our live African penguin exhibit, streaming in real-time. 
+    </description>
+    <author email="webcams@calacademy.org" href="https://www.calacademy.org">
+        California Academy of Sciences
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <splash src="splash.png" />
+    <icon src="icon.png" />
+    <preference name="orientation" value="landscape" />
+</widget>

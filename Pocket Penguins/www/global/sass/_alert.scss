@@ -1,0 +1,93 @@
+.alert {
+	@include animation(fade-in .3s $easing);
+	
+	position: absolute;
+	pointer-events: all;
+
+	text-align: center;
+	color: #000000;
+	line-height: 1.4em;
+
+	&, .bg {
+		width: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.alert-container {
+		z-index: 2;
+		position: absolute;
+		width: 325px;
+		
+		left: 50%;
+		top: 50%;
+		margin-left: -150px;
+
+		@include transform(translate3d(0, -51%, 0));
+
+		.alert-content {
+			@include border-radius(10px);
+			@include animation(from-bottom .3s $easeOut);
+
+			overflow: hidden;
+			background-color: rgba(#ffffff, 0.8);
+			font-weight: $book;
+
+			h2, .body, .button {
+				padding: 25px;
+			}
+
+			h2, .button {
+				font-size: 18px;
+			}
+
+			h2 {
+				font-weight: $semibold;
+				padding-bottom: 10px;
+			}
+
+			.body {
+				padding-top: 0;
+				font-size: 17px;
+			}
+
+			.button {
+				@include box-sizing(border-box);
+				@include hand-cursor;
+				float: left;
+
+				color: $blue;
+				padding-top: $padding - 8;
+				padding-bottom: $padding - 8;
+				
+				border-top: 1px solid #000000;
+				border-right: 1px solid #000000;
+
+				&:last-child {
+					border-right: none; 
+				}
+				
+				&:active {
+					background-color: rgba(#000000, 0.10);
+				}
+			}
+		}
+	}
+
+	.bg {
+		z-index: 1;
+		position: absolute;
+		background-color: $screenBlack;
+	}
+
+	// button width
+	@for $i from 1 through 6 {
+		#{'&.num-btns-' + $i} {
+			.button {
+				width: percentage(1 / $i);
+			}
+		}
+	}
+}

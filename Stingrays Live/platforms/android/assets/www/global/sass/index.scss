@@ -1,0 +1,288 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/css3/user-interface";
+
+@import "vars";
+@import "mixins";
+@import "animations";
+
+@include calacademy-font-face($light, 'Light');
+@include calacademy-font-face($book, 'Book');
+@include calacademy-font-face($medium, 'Medium');
+@include calacademy-font-face($semibold, 'Semibold');
+@include calacademy-font-face($bold, 'Bold');
+
+html, body, #vid-container {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+* {
+    -webkit-touch-callout: none;             
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;   
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: $fontSize;
+}
+
+body {
+	strong, b {
+		font-weight: $semibold;
+	}
+	em, i {
+		font-style: italic;
+	}
+
+	.alerting & {
+		pointer-events: none;
+	}
+
+	font-family: 'Whitney', 'Helvetica Neue', 'Helvetica', sans-serif;
+	background-color: #000000;
+	background-position: center center;
+	background-image: url('../../images/splash.png');
+	@include background-size(cover);
+
+	.label,
+	.text,
+	.body,
+	.button,
+	h2 {
+		-webkit-font-smoothing: antialiased;
+		@include backface-visibility(hidden);
+	}
+
+	.streaming-video {
+		@import "alert";
+
+		.alert {
+			z-index: 999999;
+		}
+
+		#buffering-ui {
+			position: absolute;		
+			z-index: 6;
+
+			left: 50%;
+			top: 50%;
+			width: 80px;
+			margin-left: -40px;
+			margin-top: -45px;
+
+			color: #ffffff;
+			text-align: center;	
+			font-weight: $semibold;
+
+			padding-top: 15px;
+			padding-bottom: 13px;
+
+			.text {
+				display: none;				
+			}
+
+			.svg-container {
+				@include animation(fade-in .6s $easing);
+
+				svg {
+					margin-left: 1px; // hack
+					@include animation(rotate 1.3s infinite linear);
+				}				
+			}
+
+			display: none;
+
+			.buffering & {
+				display: block;
+			}
+			.alerting &,
+			.menu-open & {
+				display: none;
+			}
+		}
+
+		#logo,
+		#donate-button {
+			display: none;
+			@include opacity(0);
+
+			.first-play & {
+				display: block;
+			}
+
+			pointer-events: none;
+			
+			.graphic {
+				pointer-events: all;
+				@include hand-cursor;
+				
+				@include opacity(.6);
+			}
+
+			&.highlight {
+				.graphic {
+					@include opacity(1);
+				}
+			}
+		}
+
+		#logo {
+			@include animation(fade-in .6s $easing .6s forwards);
+			z-index: 5;
+
+			&,
+			.graphic,
+			.shadow {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			
+			.graphic {
+				width: 87px;
+				height: 135px;
+				z-index: 2;
+				top: 8px;
+				right: 8px;
+			}
+
+			.shadow {
+				width: 300px;
+				height: 300px;
+
+				@include transition(
+					opacity .6s $easing .6s,
+					transform .6s $easing .6s
+				);
+
+				@include opacity(0);
+				@include transform-origin(100%, 0%);
+				@include transform(scale(1));
+				z-index: 1;
+			}
+		}
+
+		#donate-button {
+			@include animation(fade-in .6s $easing 1s forwards);
+
+			&,
+			.anim,
+			.label,
+			.shadow {
+				position: absolute;
+			}
+
+			z-index: 4;
+			color: #fff;
+			bottom: 0;
+			left: 0;
+			
+			&, .shadow {
+				width: 550px;
+				height: 175px;
+			}
+
+			.anim {
+				z-index: 3;
+				overflow: hidden;
+				background-image: url(../../images/silhouette.png);
+			}
+
+			.label {
+				padding-top: 30px;
+				bottom: 10px;
+				z-index: 2;
+			}
+
+			.shadow {
+				background-image: url(../images/shadow-donate.png);
+				@include background-size(550px 175px);
+				@include opacity(0.8);
+				z-index: 1;
+			}
+
+			.sharks & {
+				$leftPadding: 10px;
+
+				.anim {
+					width: 125px;
+					height: 100px;
+					@include background-size(125px 100px);
+
+					top: 70px;
+					left: $leftPadding;
+				}
+
+				.label {
+					left: 66px + $leftPadding;
+				}
+			}
+
+			.penguins & {
+				$leftPadding: 5px;
+				$shakeSize: 85px;
+
+				.anim {
+					width: $shakeSize;
+					height: $shakeSize;
+					
+					@include background-size($shakeSize);
+					background-repeat: no-repeat;
+
+					bottom: 0px;
+					left: $leftPadding;
+				}
+
+				.label {
+					left: 55px + $leftPadding;
+					bottom: 15px;
+				}
+			}
+		}
+
+		@import "menu";
+
+		#menu-container {
+			z-index: 3;
+
+			.menu-open & {
+				z-index: 999;
+			}
+		}
+
+		#vid-container {
+			// disable all iframe interactions
+			pointer-events: none;
+			z-index: 1;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			.player {
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				display: none;
+				z-index: 1;
+
+				&.playing {
+					@include animation(fade-in .6s $easing);
+					z-index: 2;
+					background-color: #000000;
+				}
+				&.first-play {
+					display: block;
+				}
+			}
+		}	
+	}
+}
