@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="air.pocketpenguins" version="3.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="air.pocketpenguins" android-versionCode="1400010" version="3.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Pocket Penguins</name>
     <description>
         Warning: Cute alert! An intimate view into our live African penguin exhibit, streaming in real-time. 
