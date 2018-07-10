@@ -1,4 +1,18 @@
-### Generating apks
+### Test
+
+```shell
+$ cordova run android
+```
+
+### Deploy
+
+## Generate release APK
+
+```shell
+$ cordova build android --release
+```
+
+## Sign with p12 cert
 
 ```shell
 #!/bin/sh
