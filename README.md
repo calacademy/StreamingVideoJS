@@ -1,22 +1,20 @@
-### Test
+## Test
 
 ```shell
 $ cordova run android
 ```
 
-### Deploy
+## Deploy
 
-## Generate release APK
+### Generate release APK
 
 ```shell
 $ cordova build android --release
 ```
 
-## Sign with p12 cert
+### Sign with p12 cert
 
 ```shell
-#!/bin/sh
-
 $ keytool -list -v -keystore pocketpenguins-air.p12
 
 $ jarsigner -storetype pkcs12 -sigalg SHA1withRSA -digestalg SHA1 -keystore pocketpenguins-air.p12 pp.apk 1
