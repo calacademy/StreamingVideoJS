@@ -1,4 +1,4 @@
-createClass(function DonateButton (label, callback) {
+var DonateButton = function (label, callback) {
     var _button;
     var _timeout;
     var _animTimeout;
@@ -65,4 +65,6 @@ createClass(function DonateButton (label, callback) {
 
         _timeout = setTimeout(that.shake, statics.utils.randomRange(15000, 30000));
     }
-});
+
+    this.init(label, callback);
+}

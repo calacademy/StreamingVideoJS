@@ -1,4 +1,4 @@
-createClass(function Alert (options, container) {
+var Alert = function (options, container) {
     var _alert;
     var _alertClass = 'alerting';
     var _container;
@@ -65,4 +65,6 @@ createClass(function Alert (options, container) {
 
         $('.alert-content', _alert).append(btn);
     }
-});
+
+    this.init(options, container);
+}

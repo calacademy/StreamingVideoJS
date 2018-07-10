@@ -1,4 +1,4 @@
-createClass(function Tracking () {
+var Tracking = function () {
     // var _gaPlugin = window.plugins.gaPlugin;
 
     this.init = function () {
@@ -15,4 +15,6 @@ createClass(function Tracking () {
     this.destroy = function () {
     	// _gaPlugin.exit(_null, _null);
     }
-});
+
+    this.init();
+}

@@ -1,4 +1,4 @@
-createClass(function StreamingVideo () {
+var StreamingVideo  = function () {
     var that = this;
     var _activePlayer;
     var _idlePlayer;
@@ -451,4 +451,6 @@ createClass(function StreamingVideo () {
     this.onOffline = function () {
         _log('onOffline');
     }
-});
+
+    this.init();
+}
