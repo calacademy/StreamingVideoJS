@@ -1,4 +1,4 @@
-createClass(function Menu (data) {
+var Menu = function (data) {
     var _container;
     var _data;
     var _log = statics.utils.log;
@@ -186,4 +186,6 @@ createClass(function Menu (data) {
 
         that.deactivate();
     }
-});
+
+    this.init(data);
+}

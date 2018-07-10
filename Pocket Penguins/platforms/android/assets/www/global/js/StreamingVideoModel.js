@@ -1,4 +1,4 @@
-createClass(function StreamingVideoModel () {
+var StreamingVideoModel = function () {
 	var _endpoint = 'https://s3.amazonaws.com/data.calacademy.org/';
 	var _data;
 	var _request;
@@ -98,4 +98,6 @@ createClass(function StreamingVideoModel () {
 	}
 
 	this.init = function () {}
-});
+
+	this.init();
+}

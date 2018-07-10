@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.calacademy.sharkslive" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="org.calacademy.sharkslive" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Stingrays Live</name>
     <description>
         Switch between two high-definition webcams and spot every detail on 10+ species of fish. Streaming in real-time, 24/7.
