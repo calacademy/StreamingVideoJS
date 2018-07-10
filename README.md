@@ -6,6 +6,8 @@ $ cordova run android
 
 ## Deploy
 
+Note: JDK 7 (version 1.7) must be installed to sign APKs. v1.8 must be installed to generate APKs. Edit ~/.bash_profile to switch versions.
+
 ### Generate release APK
 
 ```shell
@@ -13,8 +15,6 @@ $ cordova build android --release
 ```
 
 ### Sign with p12 cert
-
-Note: JDK 7 must be installed (version 1.7)
 
 ```shell
 $ keytool -list -v -keystore pocketpenguins-air.p12
