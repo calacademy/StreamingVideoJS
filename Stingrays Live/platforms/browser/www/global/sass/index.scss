@@ -114,11 +114,13 @@ body {
 			.first-play & {
 				display: block;
 			}
-		}
 
-		#logo,
-		#donate-button {
+			pointer-events: none;
+			
 			.graphic {
+				pointer-events: all;
+				@include hand-cursor;
+				
 				@include opacity(.6);
 			}
 
@@ -131,7 +133,6 @@ body {
 
 		#logo {
 			@include animation(fade-in .6s $easing .6s forwards);
-			@include hand-cursor;
 			z-index: 5;
 
 			&,
@@ -163,7 +164,6 @@ body {
 				@include transform-origin(100%, 0%);
 				@include transform(scale(1));
 				z-index: 1;
-				pointer-events: none;
 			}
 		}
 
@@ -187,14 +187,10 @@ body {
 				height: 175px;
 			}
 
-			// $shakeSize: 85px;
-			.anim,
-			.label {
-				@include hand-cursor;
-			}
-
 			.anim {
 				z-index: 3;
+				overflow: hidden;
+				background-image: url(../../images/silhouette.png);
 			}
 
 			.label {
@@ -207,7 +203,6 @@ body {
 				background-image: url(../images/shadow-donate.png);
 				@include background-size(550px 175px);
 				@include opacity(0.8);
-				pointer-events: none;
 				z-index: 1;
 			}
 
@@ -218,7 +213,6 @@ body {
 					width: 125px;
 					height: 100px;
 					@include background-size(125px 100px);
-					background-image: url(../../images/silhouette.png);
 
 					top: 70px;
 					left: $leftPadding;
@@ -226,6 +220,27 @@ body {
 
 				.label {
 					left: 66px + $leftPadding;
+				}
+			}
+
+			.penguins & {
+				$leftPadding: 5px;
+				$shakeSize: 85px;
+
+				.anim {
+					width: $shakeSize;
+					height: $shakeSize;
+					
+					@include background-size($shakeSize);
+					background-repeat: no-repeat;
+
+					bottom: 0px;
+					left: $leftPadding;
+				}
+
+				.label {
+					left: 55px + $leftPadding;
+					bottom: 15px;
 				}
 			}
 		}

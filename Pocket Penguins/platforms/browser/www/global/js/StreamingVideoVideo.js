@@ -1,4 +1,4 @@
-createClass(function StreamingVideoVideo (controller, myDomId, mute) {
+var StreamingVideoVideo = function (controller, myDomId, mute) {
 	this.isActive = false;
 	this.isFlat = false;
 	this.domID;
@@ -100,4 +100,6 @@ createClass(function StreamingVideoVideo (controller, myDomId, mute) {
 		this.isFlat = false;
 		this.isActive = false;
 	}
-});
+
+	this.init(controller, myDomId, mute);
+}

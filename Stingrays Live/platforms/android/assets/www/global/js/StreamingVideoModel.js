@@ -77,6 +77,7 @@ var StreamingVideoModel = function () {
 		_hls = $.ajax({
 			url: url,
 			cache: false,
+			dataType: 'text',
 			success: _onHLSData,
 			error: _onHLSError
 		});
