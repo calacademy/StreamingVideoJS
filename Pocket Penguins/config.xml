@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="1400010" id="air.pocketpenguins" version="3.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="1400011" id="air.pocketpenguins" version="3.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Pocket Penguins</name>
     <description>
         Warning: Cute alert! An intimate view into our live African penguin exhibit, streaming in real-time. 
@@ -19,7 +19,7 @@
         <icon height="144" qualifier="xxhdpi" src="icons/xxhdpi.png" width="144" />
         <icon height="192" qualifier="xxxhdpi" src="icons/xxxhdpi.png" width="192" />
     </platform>
-    <engine name="android" spec="^6.2.3" />
+    <engine name="android" spec="^8.0.0" />
     <engine name="browser" spec="^4.1.0" />
     <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="^2.0.1" />

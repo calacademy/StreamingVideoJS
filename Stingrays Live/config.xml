@@ -19,7 +19,7 @@
         <icon height="144" qualifier="xxhdpi" src="icons/xxhdpi.png" width="144" />
         <icon height="192" qualifier="xxxhdpi" src="icons/xxxhdpi.png" width="192" />
     </platform>
-    <engine name="android" spec="^6.2.3" />
+    <engine name="android" spec="^8.0.0" />
     <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="^2.0.1" />
     <plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
