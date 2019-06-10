@@ -107,7 +107,8 @@ body {
 		}
 
 		#logo,
-		#donate-button {
+		#donate-button,
+		#mute-button {
 			display: none;
 			@include opacity(0);
 
@@ -253,6 +254,34 @@ body {
 			.menu-open & {
 				z-index: 999;
 			}
+		}
+
+		#mute-button {
+			@include animation(fade-in .6s $easing .8s forwards);
+
+			width: 30px;
+			height: 30px;
+			z-index: 998;
+			position: absolute;
+
+			right: 10px;
+			bottom: 10px;
+
+			.mute {
+				display: block;
+			}
+			.muted {
+				display: none;
+			}
+
+			.muted & {
+				.mute {
+					display: none;
+				}
+				.muted {
+					display: block;
+				}
+			}	
 		}
 
 		#vid-container {

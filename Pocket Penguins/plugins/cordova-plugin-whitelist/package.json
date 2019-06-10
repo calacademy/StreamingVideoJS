@@ -10,7 +10,7 @@
         "spec": "1.3.3",
         "type": "version"
       },
-      "/Users/grotter/playground/phonegap/Stingrays Live/node_modules"
+      "/Users/grotter/Work/Academy/Sharks Live/phonegap/Pocket Penguins"
     ]
   ],
   "_from": "cordova-plugin-whitelist@1.3.3",
@@ -45,7 +45,7 @@
   "_shasum": "b5e85ecdbbfe5aeded40a1bf4ee2372e67d96fb4",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-whitelist@1.3.3",
-  "_where": "/Users/grotter/playground/phonegap/Stingrays Live/node_modules",
+  "_where": "/Users/grotter/Work/Academy/Sharks Live/phonegap/Pocket Penguins",
   "author": {
     "name": "Apache Software Foundation"
   },

@@ -1,4 +1,5 @@
 window.config = {
+  "hideMuteButton": true,
   "donateStyles": [
     {
       "button": {

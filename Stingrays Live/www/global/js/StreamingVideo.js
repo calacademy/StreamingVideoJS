@@ -42,16 +42,11 @@ var StreamingVideo  = function () {
     }
 
     var _onOverlayOpen = function () {
-        $('#logo, #donate-button').removeClass('highlight');
+        $('#logo, #donate-button, #mute-button').removeClass('highlight');
     }
 
     this.initPlayers = function () {
-        var mute = false;
-
-        if (_model.getConfig() != null) {
-            var data = _model.getConfig();
-            mute = (data.mute == '1');
-        }
+        var mute = $('html').hasClass('muted');
 
         _activePlayer = new StreamingVideoVideo(this, 'player1', mute);
         _idlePlayer = new StreamingVideoVideo(this, 'player2', mute);
@@ -125,6 +120,36 @@ var StreamingVideo  = function () {
         _donateButton.shake();
     }
 
+    var _initMute = function () {
+        if (window.config.hideMuteButton) {
+            $('#mute-button').remove();
+            return;
+        }
+
+        $('#mute-button').off(statics.selectEvent);
+        $('#mute-button').off(statics.startEvent);
+
+        $('#mute-button').on(statics.startEvent, function (e) {
+            $(this).addClass('highlight');
+            return false;
+        });
+
+        $('#mute-button').on(statics.selectEvent, function (e) {
+            $('html').toggleClass('muted');
+
+            if (_activePlayer) {
+                if ($('html').hasClass('muted')) {
+                    _activePlayer.mute(true);    
+                } else {
+                    _activePlayer.mute(false); 
+                }
+            }
+
+            $(this).removeClass('highlight');
+            return false;
+        });
+    }
+
     var _initLogo = function () {
         $('#logo').off(statics.selectEvent);
         $('#logo').off(statics.startEvent);
@@ -185,6 +210,7 @@ var StreamingVideo  = function () {
 
     var _initUI = function () {
         _initLogo();
+        _initMute();
         _initDonateButton();
 
         // already on stage
@@ -240,8 +266,9 @@ var StreamingVideo  = function () {
         _activePlayer = idle;
         _idlePlayer = active;
 
-        _activePlayer.setActive(true);
-        _idlePlayer.setActive(false);
+        var muted = $('html').hasClass('muted');
+        _activePlayer.setActive(true, muted);
+        _idlePlayer.setActive(false, muted);
 
         // start active
         _activePlayer.isFlat = isFlat;
@@ -308,12 +335,14 @@ var StreamingVideo  = function () {
         var scale = 1;
         var opacity = 0;
 
-        if (typeof(_selectedStream.logoShadowScale) == 'string') {
-            scale = parseFloat(_selectedStream.logoShadowScale);
-        }
+        if (_selectedStream) {
+            if (typeof(_selectedStream.logoShadowScale) == 'string') {
+                scale = parseFloat(_selectedStream.logoShadowScale);
+            }
 
-        if (typeof(_selectedStream.logoShadowOpacity) == 'string') {
-            opacity = parseFloat(_selectedStream.logoShadowOpacity);
+            if (typeof(_selectedStream.logoShadowOpacity) == 'string') {
+                opacity = parseFloat(_selectedStream.logoShadowOpacity);
+            }
         }
         
         $('#logo .shadow').css({

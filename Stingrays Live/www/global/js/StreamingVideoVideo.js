@@ -11,17 +11,12 @@ var StreamingVideoVideo = function (controller, myDomId, mute) {
 	this.init = function (controller, myDomId, mute) {
 		this.domID = myDomId;
 		
-		var v = $('<video webkit-playsinline="" playsinline="" x-webkit-airplay="allow" id="' + this.domID + '" />');
+		var v = $('<video webkit-playsinline="" playsinline="" autoplay x-webkit-airplay="allow" id="' + this.domID + '" />');
 		v.addClass('player');
 		$('#' + this.domID).replaceWith(v);
 		
 		_video = v.get(0);
-		_video.autoplay = true;
-		
-		if (mute) {
-			// autoplay issues
-			_video.muted = true;
-		}
+		this.mute(mute);
 	}
 
 	var _onStateChange = function (e) {
@@ -29,11 +24,13 @@ var StreamingVideoVideo = function (controller, myDomId, mute) {
 		$(document).trigger('streamingvideo.statechange', [e.type]);
 	}
 
-	this.setActive = function (boo) {
+	this.setActive = function (boo, muted) {
 		if (boo) {
 			$(_video).addClass('active');
+			this.mute(muted);
 		} else {
 			$(_video).removeClass('active');
+			this.mute(true);
 		}
 
 		this.isActive = boo;
@@ -41,6 +38,12 @@ var StreamingVideoVideo = function (controller, myDomId, mute) {
 
 	this.getDOM = function () {
 		return _video;
+	}
+
+	this.mute = function (boo) {
+		if (_video) {
+			_video.muted = boo;
+		}
 	}
 
 	this.pause = function () {

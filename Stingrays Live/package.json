@@ -15,7 +15,7 @@
         }
     },
     "dependencies": {
-        "cordova-android": "^6.2.3",
+        "cordova-android": "^8.0.0",
         "cordova-plugin-fullscreen": "~1.1.0",
         "cordova-plugin-inappbrowser": "^2.0.1",
         "cordova-plugin-insomnia": "^4.3.0",
