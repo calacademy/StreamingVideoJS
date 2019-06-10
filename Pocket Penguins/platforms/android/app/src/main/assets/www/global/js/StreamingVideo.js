@@ -121,9 +121,10 @@ var StreamingVideo  = function () {
     }
 
     var _initMute = function () {
-        var config = _model.getConfig();
-        if (!config) return;
-
+        if (window.config.hideMuteButton) {
+            $('#mute-button').remove();
+            return;
+        }
 
         $('#mute-button').off(statics.selectEvent);
         $('#mute-button').off(statics.startEvent);
